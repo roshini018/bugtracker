@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= title %></title>
+</head>
+<body>
+  <h1>Bug List</h1>
+  <ul>
+    <% bugs.forEach(function(bug) { %>
+      <li><strong><%= bug.title %></strong> (Bug ID: <%= bug.id %>)</li>
+    <% }); %>
+  </ul>
+  <a href="/">Back to Home</a>
+<a href="/logout">Logout</a>
+</body>
+</html>
